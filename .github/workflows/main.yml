@@ -3,11 +3,10 @@ on: push
 
 jobs:
   build:
-    name: test build
     runs-on: unity
+    
     steps:
       - uses: normal111/fokin-weather@master
-          
       - name: Check File
         run: |
           ls
