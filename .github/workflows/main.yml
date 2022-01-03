@@ -4,10 +4,15 @@ on: push
 jobs:
   build:
     name: test build
-
     runs-on: unity
     steps:
-      - name: Hello world
+      - name: Clone Project
+        uses: normal111/fokin-weather@main
+        with:
+          owner: 'normal111'
+          repository: 'fokin-weather@main'
+          
+      - name: Check File
         run: |
           ls
           pwd
