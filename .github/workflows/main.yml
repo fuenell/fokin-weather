@@ -6,7 +6,7 @@ jobs:
     runs-on: unity
     
     steps:
-      - uses: normal111/fokin-weather@master
+      - uses: actions/checkout@v1
       - name: Check File
         run: |
           ls
