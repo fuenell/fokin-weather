@@ -11,4 +11,4 @@ jobs:
       
       - name: Check File
         run: |
-          sh run.sh
+          sh cicd/run.sh
