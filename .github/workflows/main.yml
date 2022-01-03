@@ -11,7 +11,7 @@ jobs:
       
       - name: Check File
         run: |
-          cat workflows/main.yml
+          cat .github/workflows/main.yml
           sh cicd/run.sh
           
       - name: Print Secrets
