@@ -12,3 +12,7 @@ jobs:
       - name: Check File
         run: |
           sh cicd/run.sh
+          
+      - name: Print Secrets
+        run: |
+          echo ${TEST}
