@@ -11,4 +11,4 @@ jobs:
       
       - name: Check File
         run: |
-          pwd
+          sh run.sh
