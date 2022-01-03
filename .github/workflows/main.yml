@@ -7,7 +7,7 @@ jobs:
     runs-on: unity
     steps:
       - name: Clone Project
-        uses: normal111/fokin-weather@main
+        uses: normal111/fokin-weather@master
         with:
           owner: 'normal111'
           repository: 'fokin-weather@main'
