@@ -13,7 +13,21 @@ jobs:
         run: |
           cat .github/workflows/main.yml
           sh cicd/run.sh
-          
+
+  build2:
+    runs-on: unity
+    
+    steps:
+      - name: Clone Project
+        run: |
+          echo hi
+      
+      - name: Check File
+        run: |
+          cat .github/workflows/main.yml
+          sh cicd/run.sh
+
+
 #      - name: Print Secrets
 #        run: |
 #          echo ${{secrets.TEST}} >> text.txt
