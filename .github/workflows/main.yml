@@ -10,7 +10,7 @@ jobs:
         uses: normal111/fokin-weather@master
         with:
           owner: 'normal111'
-          repository: 'fokin-weather@main'
+          repository: 'fokin-weather@master'
           
       - name: Check File
         run: |
