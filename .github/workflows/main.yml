@@ -6,11 +6,7 @@ jobs:
     name: test build
     runs-on: unity
     steps:
-      - name: Clone Project
-        uses: normal111/fokin-weather@master
-        with:
-          owner: 'normal111'
-          repository: 'fokin-weather@master'
+      - uses: normal111/fokin-weather@master
           
       - name: Check File
         run: |
