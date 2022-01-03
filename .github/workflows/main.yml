@@ -13,20 +13,18 @@ jobs:
         run: |
           cat .github/workflows/main.yml
           sh cicd/run.sh
-
-  build2:
-    runs-on: unity
-    
-    steps:
-      - name: Clone Project
+          
+      - name: Print Secrets
         run: |
-          echo hi
-      
-      - name: Check File
-        run: |
-          cat .github/workflows/main.yml
-          sh cicd/run.sh
-
+          echo ${{secrets.TEST}} >> text.txt
+          cat text.txt
+          
+      - name: 'Upload Artifact'
+        uses: actions/upload-artifact@v2
+        with:
+          name: my-artifact
+          path: text.txt
+          retention-days: 1
 
 #      - name: Print Secrets
 #        run: |
