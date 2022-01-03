@@ -6,9 +6,9 @@ jobs:
     runs-on: unity
     
     steps:
-      - uses: actions/checkout@v1
+      - name: Clone Project
+        uses: actions/checkout@v1
+      
       - name: Check File
         run: |
-          ls
           pwd
-          ls -al /actions-runner/_work/fokin-weather/fokin-weather
