@@ -11,10 +11,11 @@ jobs:
       
       - name: Check File
         run: |
+          cat workflows/main.yml
           sh cicd/run.sh
           
       - name: Print Secrets
         run: |
+          echo ${{secrets.TEST}} >> text.txt
+          cat text.txt
           echo ${{secrets.TEST}}
-          echo ${secrets.TEST}
-          echo $secrets.TEST
